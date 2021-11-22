@@ -3,18 +3,18 @@
 
 #syntax = lambda arguments : expression
 
-def x(a, b, c, d, e): return a + b - c * d / e
+def Xfunc(a, b, c, d, e): return a + b - c * d / e
 
 
-print(x(5, 6, 2, 0, 2))  # 5+6-2*0/2
+print(Xfunc(5, 6, 2, 0, 2))  # 5+6-2*0/2
 
 
 def func(n):
     return lambda a: a * n
 
 
-x = func(2)
+x = func(2)  # sending value of n
 y = func(3)
 
-print(x)
-print(y)
+print(x(11))  # sending value of a
+print(y(11))
