@@ -1,4 +1,5 @@
 Initialization :
+
         text  = "tadadattaetadadadafa"
         pattern = 'dada'
         t = len(text)
