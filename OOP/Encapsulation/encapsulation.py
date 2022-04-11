@@ -21,11 +21,11 @@ v1.show1()
 
 class Vehicle2:
     __name = ''
-    def _show1(self):
+    def __show1(self):
         self.__name = 'Corolla'
         print(self.__name)
     def show2(self):
-        self._show1()
+        self.__show1()
 v2 = Vehicle2()
 v2.show2()
 #Output : Corolla CAUSE non-public methods can only be accessed inside class
@@ -34,7 +34,7 @@ v2.show2()
 
 class Vehicle3:
     __name = ''
-    def _show3(self):
+    def __show3(self):
         self.__name = 'Bugatti'
         print(self.__name)
 v1 = Vehicle3()
